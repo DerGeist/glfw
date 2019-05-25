@@ -23,7 +23,7 @@ project "GLFW"
     filter "system:linux"
         defines
         {
-            "_GLFW_WAYLAND"
+            "_GLFW_X11"
         }
 
     filter "configurations:Debug"

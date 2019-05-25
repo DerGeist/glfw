@@ -21,6 +21,16 @@ project "GLFW"
     }
 
     filter "system:linux"
+        files
+        {
+            "src/x11_init.c",
+            "src/x11_monitor.c",
+            "src/x11_window.c",
+            "src/wgl_context.c",
+            "src/egl_context.c",
+            "src/osmesa_context.c"
+        }
+
         defines
         {
             "_GLFW_X11"

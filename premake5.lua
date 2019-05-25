@@ -20,6 +20,12 @@ project "GLFW"
         "src/window.c"
     }
 
+    filter "system:linux"
+        defines
+        {
+            "_GLFW_WAYLAND"
+        }
+
     filter "configurations:Debug"
         runtime "Debug"
         symbols "on"

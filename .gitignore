@@ -86,3 +86,5 @@ tests/title
 tests/vulkan
 tests/windows
 
+
+*.a

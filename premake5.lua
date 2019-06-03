@@ -59,7 +59,9 @@ project "GLFW"
             "src/wgl_context.c",
             "src/egl_context.c",
             "src/osmesa_context.c"
-        }
+		}
+		
+		buildoptions { "-std=c11", "-lgdi32" }
 
         defines
         {

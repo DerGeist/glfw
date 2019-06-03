@@ -64,7 +64,12 @@ project "GLFW"
         defines
         {
             "_GLFW_WIN32"
-        }
+		}
+		
+		links
+		{
+			"gdi32"
+		}
 
     filter "configurations:Debug"
         runtime "Debug"
@@ -72,4 +77,4 @@ project "GLFW"
 
     filter "configurations:Release"
 		runtime "Release"
-        optimize "on"
+		optimize "on"

@@ -42,6 +42,28 @@ project "GLFW"
         defines
         {
             "_GLFW_X11"
+		}
+		
+	filter "system:windows"
+        files
+        {
+            "src/win32_joystick.c",
+
+            "src/win32_init.c",
+            "src/win32_monitor.c",
+            "src/win32_window.c",
+
+            "src/win32_time.c",
+            "src/win32_thread.c",
+
+            "src/wgl_context.c",
+            "src/egl_context.c",
+            "src/osmesa_context.c"
+        }
+
+        defines
+        {
+            "_GLFW_WIN32"
         }
 
     filter "configurations:Debug"

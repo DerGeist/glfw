@@ -60,17 +60,23 @@ project "GLFW"
             "src/egl_context.c",
             "src/osmesa_context.c"
 		}
-		
-		buildoptions { "-std=c11", "-lgdi32" }
+
+		libdirs
+		{
+			"lib/"
+		}
 
         defines
         {
-            "_GLFW_WIN32"
+			"_GLFW_USE_CONFIG_H"
 		}
 		
 		links
 		{
-			"gdi32"
+			"user32",
+			"kernel32",
+			"gdi32",
+			"opengl32"
 		}
 
     filter "configurations:Debug"

@@ -88,3 +88,5 @@ tests/windows
 
 
 *.a
+
+bin/Debug-windows-x86_64/GLFW/GLFW\.lib

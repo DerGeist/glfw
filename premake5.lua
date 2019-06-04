@@ -68,7 +68,7 @@ project "GLFW"
 
         defines
         {
-			"_GLFW_USE_CONFIG_H"
+			"_GLFW_WIN32"
 		}
 		
 		links
